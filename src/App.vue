@@ -69,10 +69,10 @@ import App from './App.vue'
 
 /* add icons to the library */
 //library.add(faLink,faClockRotateLeft,faArrowLeft)
-
+/*
 createApp(App)
 .component('font-awesome-icon', FontAwesomeIcon)
-.mount('#app')
+.mount('#app')*/
 export default {
   name: 'App',
   data(){
@@ -97,9 +97,10 @@ export default {
       }
     }
   },
+  /*
   components:{
     FontAwesomeIcon,
-  },
+  },*/
   mounted(){
     if(window.localStorage.getItem("historyLinks")){
       this.historyLinks = JSON.parse(window.localStorage.getItem("historyLinks"));
