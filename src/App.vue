@@ -15,6 +15,7 @@
           <input type="text" v-model.lazy="inputUrl" @focus="shortenedUrl = '', loaderShown = false" placeholder="Enter a Valid URL" autofocus>
           <button @click.prevent="getShortUrl(inputUrl),loaderShown = true">Shorten</button>
           <button @click.prevent="flipContent(), this.showResult = false" class="history">
+          History
           <!--<font-awesome-icon icon="fa-solid fa-clock-rotate-left" />-->
           </button>
         </form>
@@ -40,6 +41,7 @@
       <div class="list">
         <ul>
           <div class="go-back" @click="flipContent(),waitToShowResult()">
+          back
           <!--<font-awesome-icon icon="fa-solid fa-arrow-left" />-->
           </div>
           <li v-for="i in 3" :key="i" class="result">
